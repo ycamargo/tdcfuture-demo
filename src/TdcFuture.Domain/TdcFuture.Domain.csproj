@@ -7,6 +7,7 @@
   <ItemGroup>
     <PackageReference Include="Liquid.Domain" Version="2.0.1" />
     <PackageReference Include="Liquid.Domain.Extensions.Crud" Version="2.0.0-preview-20211105-01" />
+    <PackageReference Include="Liquid.Messaging" Version="2.0.0-preview-20211015-06" />
     <PackageReference Include="Liquid.Repository" Version="2.0.1" />
   </ItemGroup>
 

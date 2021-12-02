@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Liquid.Messaging.ServiceBus" Version="2.0.0-preview-20211015-10" />
     <PackageReference Include="Liquid.WebApi.Http" Version="2.0.3" />
     <PackageReference Include="Liquid.WebApi.Http.Extensions.Crud" Version="2.0.0-preview20211118-01" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.12">

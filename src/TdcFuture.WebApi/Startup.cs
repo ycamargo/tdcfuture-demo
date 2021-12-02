@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Liquid.Repository.EntityFramework.Extensions;
 using Liquid.WebApi.Http.Extensions.DependencyInjection;
+using Liquid.Messaging.ServiceBus.Extensions.DependencyInjection;
 using System;
 using TdcFuture.Domain;
 using TdcFuture.Domain.Entities;
@@ -43,6 +44,7 @@ namespace TdcFuture.WebApi
             services.RegisterCrud<ShoppingCart, int>();
             services.RegisterCrud<ShoppingCartProduct, int>();
 
+            services.AddLiquidServiceBusProducer<ShoppingCart>("Liquid:Messaging:ServiceBus:ShoppingCart");
             #endregion
 
             services.AddControllers();
